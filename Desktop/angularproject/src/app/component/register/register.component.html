@@ -1,0 +1,54 @@
+<img src="assets/sav.ico" alt="thumbnail">
+<!-- Default form register -->
+<form class="text-center border border-light p-5" action="#!">
+
+    <p class="h4 mb-4"><strong>ADMINISTATOR SIGN UP</strong></p>
+
+
+    <div class="form-row mb-4">
+        
+        <div class="col">
+            <!-- First name -->
+            <input type="text" [(ngModel)] id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
+        </div>
+        <br><br>
+        <div class="col">
+            <!-- Last name -->
+            <input type="text" [(ngModel)] id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
+        </div>
+        <br><br>
+    </div>
+<div class="col">
+    <input type="text" [(ngModel)] id="defaultRegisterFormUserName" class="form-control" placeholder="Username">
+</div>
+<br><br>
+    <!-- E-mail -->
+    <input type="email" [(ngModel)] id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+<br><br>
+    <!-- Password -->
+    <input type="password" [(ngModel)] id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+    <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+        At least 8 characters and 1 digit
+    </small>
+<br><br>
+
+
+    <!-- Phone number -->
+        <input type="text" [(ngModel)] id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+    <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
+        Optional - for two step authentication
+    </small>
+<br><br>
+
+<!-- Terms of service -->
+<p>By clicking
+    <em>Sign up</em> you agree to our
+    <a href="" target="_blank">terms of service</a>
+
+    <!-- Sign up button -->
+    <button class="btn btn-info my-4 btn-block" type="submit" (click)="register()">Sign in</button>
+
+    <hr>
+
+</form>
+<!-- Default form register -->
